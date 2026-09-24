@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Character Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Character Counter</h1>
+    <p class="subtitle">Type or paste text below to count characters and words in real time.</p>
+
+    <textarea id="text-input" placeholder="Start typing or paste your text here..."></textarea>
+
+    <div class="stats-container">
+      <div class="stat-box">
+        <span class="stat-number" id="char-count">0</span>
+        <span class="stat-label">Total Characters</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" id="char-no-spaces-count">0</span>
+        <span class="stat-label">Excluding Spaces</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" id="word-count">0</span>
+        <span class="stat-label">Words</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" id="lines">0</span>
+        <span class="stat-label">Lines</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="brain.js"></script>
+</body>
+</html>
